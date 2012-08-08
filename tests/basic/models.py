@@ -48,6 +48,15 @@ class RelatedBasedNote(models.Model):
         return u"RelatedBased %s" % self.title
 
 
+class FileNote(models.Model):
+    title = models.CharField(max_length=255)
+    slug = models.SlugField()
+    file = models.FileField(upload_to='files/')
+
+    def __unicode__(self):
+        return "FileNote %s" % self.title
+
+
 class UserForm(forms.ModelForm):
     class Meta:
         model = User

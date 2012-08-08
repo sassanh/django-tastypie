@@ -5,7 +5,7 @@ from tastypie.bundle import Bundle
 from tastypie.fields import ToOneField, ToManyField
 from tastypie.resources import ModelResource
 from basic.api.resources import SlugBasedNoteResource, RelatedBasedNoteResource
-from basic.models import Note, AnnotatedNote, SlugBasedNote, RelatedBasedNote
+from basic.models import Note, AnnotatedNote, SlugBasedNote, RelatedBasedNote, FileNote
 
 
 class InvalidLazyUserResource(ModelResource):
