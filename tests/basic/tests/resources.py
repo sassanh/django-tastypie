@@ -4,8 +4,13 @@ from django.test import TestCase
 from tastypie.bundle import Bundle
 from tastypie.fields import ToOneField, ToManyField
 from tastypie.resources import ModelResource
+<<<<<<< HEAD
 from basic.api.resources import SlugBasedNoteResource, RelatedBasedNoteResource
 from basic.models import Note, AnnotatedNote, SlugBasedNote, RelatedBasedNote, FileNote
+=======
+from basic.api.resources import SlugBasedNoteResource
+from basic.models import Note, AnnotatedNote, SlugBasedNote, FileNote
+>>>>>>> file_uploads
 
 
 class InvalidLazyUserResource(ModelResource):
