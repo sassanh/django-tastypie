@@ -23,7 +23,7 @@ class GeometryApiField(ApiField):
         value = super(GeometryApiField, self).hydrate(bundle)
         if value is None:
             return value
-        return simplejson.dumps(value)
+        return value.geojson
 
     def dehydrate(self, obj):
         return self.convert(super(GeometryApiField, self).dehydrate(obj))
